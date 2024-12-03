@@ -71,7 +71,7 @@ program
             }   
 
             todos.forEach((element,index)  => {
-                if(element.startsWith('Completed')){
+                if(element.startsWith('[Completed]')){
                     console.log(chalk.yellow.italic(`${index+1} ${todos[index]}`))
                 }else{
                     console.log(chalk.red.italic(`${index+1} ${todos[index]}`));
@@ -127,7 +127,6 @@ program
             saveTodo(todos);
 
             console.log(chalk.green.bold(`TODO ${x} is deleted successfully`));
-
         })
 
     
